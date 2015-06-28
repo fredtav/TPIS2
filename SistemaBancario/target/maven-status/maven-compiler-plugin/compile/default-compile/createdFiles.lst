@@ -1,0 +1,10 @@
+br\uff\tpisII\sistemabancario\bean\Cliente.class
+br\uff\tpisII\sistemabancario\bean\CartaoCredito.class
+br\uff\tpisII\sistemabancario\bean\ContaCorrente.class
+br\uff\tpisII\sistemabancario\model\Conta.class
+br\uff\tpisII\sistemabancario\bean\Registro.class
+br\uff\tpisII\sistemabancario\bean\ContaPoupanca.class
+br\uff\tpisII\sistemabancario\model\Cartao.class
+br\uff\tpisII\sistemabancario\bean\AgenciaBancaria.class
+br\uff\tpisII\sistemabancario\bean\CartaoDebito.class
+br\uff\tpisII\sistemabancario\bean\Cheque.class

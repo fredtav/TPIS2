@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Caixa eletrônico 24 horas</title>
+    </h:head>
+    <h:body>
+        
+        <h1>Bem Vindo Cliente!!</h1>
+        
+        <h:form>
+            Número Cartão: <br/>
+            <h:inputText value="#{cartaoDebito.numeroCartao}" required="true"/> <br/>
+            Senha Cartão: <br/>
+            <h:inputSecret value="#{cartaoDebito.senhaCartao}"/><br/>
+            <br/>
+            
+            <h:selectOneRadio value="#{nextPageBean.page}" required="true">
+                <f:selectItem itemLabel="Conta Corrente" itemValue="1"/>
+                <f:selectItem itemLabel="Conta Poupança" itemValue="2"/>
+            </h:selectOneRadio>
+            <h:commandButton value="Conectar à conta" action="#{nextPageBean.redirecionar()}"/>
+            
+            <!--<h:commandButton value="Conectar Conta Corrente" action="homeClienteCorrente.xhmtl"/> <br/>
+            <h:commandButton value="Conectar Conta Poupança" action="homeClientePoupanca.xhmtl"/> <br/> -->
+            <h:commandButton value="Criar nova conta" action="novaConta.xhtml"/>
+        </h:form>   
+    </h:body>
+</html>
+
